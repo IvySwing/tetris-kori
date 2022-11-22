@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 
-import { buildBoard, nextBoard } from "/src/business/Board";
+import { buildBoard, nextBoard } from "../business/Board";
 
 export const useBoard = ({
   rows,
   columns,
   player,
   resetPlayer,
-  addLinesCleared
+  addLinesCleared,
 }) => {
   const [board, setBoard] = useState(buildBoard({ rows, columns }));
 
@@ -17,7 +17,7 @@ export const useBoard = ({
         board: previousBoard,
         player,
         resetPlayer,
-        addLinesCleared
+        addLinesCleared,
       })
     );
   }, [player, resetPlayer, addLinesCleared]);

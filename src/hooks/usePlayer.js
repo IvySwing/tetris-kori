@@ -1,6 +1,6 @@
 import { useState, useCallback } from "react";
 
-import { randomTetromino } from "/src/business/Tetrominoes";
+import { randomTetromino } from "../business/Tetrominoes";
 
 const buildPlayer = (previous) => {
   let tetrominoes;
@@ -19,7 +19,7 @@ const buildPlayer = (previous) => {
     isFastDropping: false,
     position: { row: 0, column: 4 },
     tetrominoes,
-    tetromino: tetrominoes.pop()
+    tetromino: tetrominoes.pop(),
   };
 };
 

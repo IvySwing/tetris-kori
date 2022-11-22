@@ -1,20 +1,20 @@
 import "./GameController.css";
 
-import { Action, actionForKey, actionIsDrop } from "/src/business/Input";
-import { playerController } from "/src/business/PlayerController";
+import { Action, actionForKey, actionIsDrop } from "../business/Input";
+import { playerController } from "../business/PlayerController";
 
-import { useDropTime } from "/src/hooks/useDropTime";
-import { useInterval } from "/src/hooks/useInterval";
+import { useDropTime } from "../hooks/useDropTime";
+import { useInterval } from "../hooks/useInterval";
 
 const GameController = ({
   board,
   gameStats,
   player,
   setGameOver,
-  setPlayer
+  setPlayer,
 }) => {
   const [dropTime, pauseDropTime, resumeDropTime] = useDropTime({
-    gameStats
+    gameStats,
   });
 
   useInterval(() => {
@@ -52,7 +52,7 @@ const GameController = ({
       board,
       player,
       setPlayer,
-      setGameOver
+      setGameOver,
     });
   };
 
