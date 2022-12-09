@@ -2,13 +2,12 @@
   position: absolute;
   top: 0;
   left: 72.2vw;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(63, 204, 187, 0.1);
   border: 10px solid rgba(0, 0, 0, 0);
   border-radius: 10px;
 }
 
 .Preview-board {
-  background: blue;
   display: grid;
   grid-gap: 2px;
   grid-template-rows: repeat(4, 1fr);
