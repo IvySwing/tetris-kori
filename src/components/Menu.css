@@ -15,3 +15,11 @@
   box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 60px;
   cursor: pointer;
 }
+
+.Instructions {
+  line-height: 20px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #3fccbb;
+  border-radius: 20px;
+}

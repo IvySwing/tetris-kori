@@ -5,7 +5,7 @@ const Menu = ({ onClick }) => (
     <button className="Button" onClick={onClick}>
       Play Tetris
     </button>
-    <span>
+    <span className="Instructions">
       <p>Press "Q" to Quit</p>
       <p>Press "P" to Pause/Resume</p>
       <p>Press "ArrowUp" to Rotate</p>
